@@ -6,6 +6,7 @@ import {Record} from '../record';
   templateUrl: './layout.component.html',
   styleUrls: ['./layout.component.sass']
 })
+
 export class LayoutComponent implements OnInit {
   // @ts-ignore
   record: Record;
@@ -13,7 +14,7 @@ export class LayoutComponent implements OnInit {
 
   ngOnInit(): void {
   }
-  setRecord(record: any): void{
+  setRecord(record: Record): void{
     this.record = record;
   }
 }
