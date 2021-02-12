@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
+import {Record} from '../../record';
 
 @Component({
   selector: 'app-results',
@@ -6,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./results.component.sass']
 })
 export class ResultsComponent implements OnInit {
+  // @ts-ignore
+  @Input() record: Record;
 
   constructor() { }
 

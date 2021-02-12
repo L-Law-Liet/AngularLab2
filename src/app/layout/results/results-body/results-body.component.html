@@ -1,0 +1,24 @@
+<div>
+  <table class="table">
+    <thead class="table-light">
+      <tr>
+        <th>Date</th>
+        <th>Distance in meters</th>
+        <th>Time</th>
+        <th>Average speed</th>
+        <th colspan="2">Options</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let record of records">
+        <td>{{ record.date }}</td>
+        <td>{{ record.distance }}</td>
+        <td>{{ record.time }}</td>
+        <td>{{ record.speed }}</td>
+        <td><button class="btn border-0">Edit</button></td>
+        <td><button class="btn border-0">Delete</button></td>
+      </tr>
+    </tbody>
+  </table>
+
+</div>
